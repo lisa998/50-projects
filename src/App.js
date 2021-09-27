@@ -20,7 +20,7 @@ import FormWave from "./projects/formWave/formWave";
 import SoundBoard from "./projects/soundBoard";
 import DadJokes from "./projects/dadJokes/dadJokes";
 import EventKeyCode from "./projects/eventKeyCode/eventKeyCode";
-import FaqCollapse from "./projects/faqCollapse";
+import FaqCollapse from "./projects/faqCollapse/faqCollapse";
 import RandomChoicePicker from "./projects/randomChoicePicker";
 import AnimatedNavigation from "./projects/animatedNavigation";
 import IncrementingCounter from "./projects/incrementingCounter";
