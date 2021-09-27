@@ -14,7 +14,7 @@ import ProgressSteps from "./projects/progressSteps/progressSteps";
 import RotatingNavigation from "./projects/rotatingNavigation/rotatingNavigation";
 import SearchBar from "./projects/hiddenSearchWidget/hiddenSearchWidget";
 import BlurryLoading from "./projects/blurryLoading/blurryLoading";
-import ScrollAnimation from "./projects/scrollAnimation";
+import ScrollAnimation from "./projects/scrollAnimation/scrollAnimation";
 import SplitLandingPage from "./projects/splitLandingPage";
 import FormWave from "./projects/formWave";
 import SoundBoard from "./projects/soundBoard";
