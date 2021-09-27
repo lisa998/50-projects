@@ -24,7 +24,7 @@ import FaqCollapse from "./projects/faqCollapse/faqCollapse";
 import RandomChoicePicker from "./projects/randomChoicePicker/randomChoicePicker";
 import AnimatedNavigation from "./projects/animatedNavigation/animatedNavigation";
 import IncrementingCounter from "./projects/incrementingCounter/incrementingCounter";
-import DrinkWater from "./projects/drinkWater.js";
+import DrinkWater from "./projects/drinkWater/drinkWater.js";
 import MovieApp from "./projects/movieApp";
 import BackgroundSlider from "./projects/backgroundSlider";
 import ThemeClock from "./projects/themeClock";
