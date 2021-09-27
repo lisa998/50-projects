@@ -10,7 +10,7 @@ import Drawer from "@material-ui/core/Drawer";
 import Sider from "./core/sider/sider";
 
 import ExpendingCard from "./projects/expendingCard/expendingCard";
-import ProgressSteps from "./projects/progressSteps";
+import ProgressSteps from "./projects/progressSteps/progressSteps";
 import RotatingNavigation from "./projects/rotatingNavigation";
 import SearchBar from "./projects/hiddenSearchWidget";
 import BlurryLoading from "./projects/blurryLoading";
