@@ -11,7 +11,7 @@ import Sider from "./core/sider/sider";
 
 import ExpendingCard from "./projects/expendingCard/expendingCard";
 import ProgressSteps from "./projects/progressSteps/progressSteps";
-import RotatingNavigation from "./projects/rotatingNavigation";
+import RotatingNavigation from "./projects/rotatingNavigation/rotatingNavigation";
 import SearchBar from "./projects/hiddenSearchWidget";
 import BlurryLoading from "./projects/blurryLoading";
 import ScrollAnimation from "./projects/scrollAnimation";
