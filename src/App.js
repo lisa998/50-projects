@@ -27,8 +27,8 @@ import IncrementingCounter from "./projects/incrementingCounter/incrementingCoun
 import DrinkWater from "./projects/drinkWater/drinkWater.js";
 import MovieApp from "./projects/movieApp/movieApp";
 import BackgroundSlider from "./projects/backgroundSlider/backgroundSlider";
-import ThemeClock from "./projects/themeClock";
-import ButtonRippleEffect from "./projects/buttonRippleEffect";
+import ThemeClock from "./projects/themeClock/themeClock";
+import ButtonRippleEffect from "./projects/buttonRippleEffect/buttonRippleEffect";
 import DrawingApp from "./projects/drawingApp";
 import DragNDrop from "./projects/dragNDrop";
 import KineticLoader from "./projects/kineticLoader";
