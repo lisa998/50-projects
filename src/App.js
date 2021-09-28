@@ -26,7 +26,7 @@ import AnimatedNavigation from "./projects/animatedNavigation/animatedNavigation
 import IncrementingCounter from "./projects/incrementingCounter/incrementingCounter";
 import DrinkWater from "./projects/drinkWater/drinkWater.js";
 import MovieApp from "./projects/movieApp/movieApp";
-import BackgroundSlider from "./projects/backgroundSlider";
+import BackgroundSlider from "./projects/backgroundSlider/backgroundSlider";
 import ThemeClock from "./projects/themeClock";
 import ButtonRippleEffect from "./projects/buttonRippleEffect";
 import DrawingApp from "./projects/drawingApp";
