@@ -45,7 +45,7 @@ import NoteApp from "./projects/noteApp/noteApp";
 import AnimatedCountdown from "./projects/animatedCountdown/animatedCountdown";
 import ImageCarousel from "./projects/imageCarousel/imageCarousel";
 import Hoverboard from "./projects/hoverboard/hoverboard";
-import PokeDex from "./projects/pokeDex";
+import PokeDex from "./projects/pokeDex/pokeDex";
 import MobileTabNavigation from "./projects/mobileTabNavigation";
 import PasswordStrengthBackground from "./projects/passwordStrengthBackground";
 import BoxesBackground from "./projects/boxesBackground";
