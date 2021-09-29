@@ -44,7 +44,7 @@ import SwitchBtn from "./projects/switchBtn/switchBtn";
 import NoteApp from "./projects/noteApp/noteApp";
 import AnimatedCountdown from "./projects/animatedCountdown/animatedCountdown";
 import ImageCarousel from "./projects/imageCarousel/imageCarousel";
-import Hoverboard from "./projects/hoverboard";
+import Hoverboard from "./projects/hoverboard/hoverboard";
 import PokeDex from "./projects/pokeDex";
 import MobileTabNavigation from "./projects/mobileTabNavigation";
 import PasswordStrengthBackground from "./projects/passwordStrengthBackground";

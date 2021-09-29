@@ -1,21 +1,6 @@
 import { styled } from "@material-ui/core";
-import React from "react";
 
-export default function Hoverboard() {
-  const Squares = new Array(500).fill("");
-  const colors = ["#e74c3c", "#8e44ad", "#3498db", "#e67e22", "#2ecc71"];
-  const randomColor = () => colors[Math.floor(Math.random() * colors.length)];
-  return (
-    <Body>
-      <Board>
-        {Squares.map((ele, i) => (
-          <Square key={i} color={randomColor()} />
-        ))}
-      </Board>
-    </Body>
-  );
-}
-const Body = styled("div")({
+export const Body = styled("div")({
   position: "relative",
   display: "flex",
   flexDirection: "column",
@@ -26,7 +11,7 @@ const Body = styled("div")({
   justifyContent: "center",
   backgroundColor: "#111",
 });
-const Board = styled("div")({
+export const Board = styled("div")({
   position: "relative",
   display: "flex",
   width: 400,
@@ -35,7 +20,7 @@ const Board = styled("div")({
   justifyContent: "center",
   flexWrap: "wrap",
 });
-const Square = styled("div")({
+export const Square = styled("div")({
   position: "relative",
   height: 16,
   width: 16,
