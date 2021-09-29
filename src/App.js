@@ -37,7 +37,7 @@ import StickyNavbar from "./projects/stickyNavbar/stickyNavbar";
 import DoubleVerticalSlider from "./projects/doubleVerticalSlider/doubleVerticalSlider";
 import ToastNotification from "./projects/toastNotification/toastNotification";
 import GithubProfiles from "./projects/githubProfiles/githubProfiles";
-import DoubleClickHeart from "./projects/doubleClickHeart";
+import DoubleClickHeart from "./projects/doubleClickHeart/doubleClickHeart";
 import AutoTextEffect from "./projects/autoTextEffect";
 import PasswordGenerator from "./projects/passwordGenerator";
 import SwitchBtn from "./projects/Switch";
