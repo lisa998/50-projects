@@ -18,7 +18,7 @@ export default function ToastNotification() {
 
   return (
     <Body>
-      <Box btn={true} onClick={newMessage}>
+      <Box btn={1} onClick={newMessage}>
         Show Notification
       </Box>
       <MessageContainer>
