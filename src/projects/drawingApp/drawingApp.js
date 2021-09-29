@@ -1,5 +1,5 @@
-import { styled } from "@material-ui/styles";
 import { useState, useRef } from "react";
+import { Body, Canvas, Toolbar, Btn } from "./styled";
 
 export default function DrawingApp() {
   const [size, setSize] = useState(10);
@@ -71,17 +71,6 @@ export default function DrawingApp() {
     </Body>
   );
 }
-const Body = styled("div")({
-  height: "80vh",
-  display: "flex",
-  flexDirection: "column",
-  alignItems: "center",
-  justifyContent: "center",
-  width: "100%",
-});
-const Canvas = styled("canvas")({
-  border: "2px solid steelblue",
-});
 
 const Tool = ({ size, setSize, color, setColor, canvasRef }) => {
   const addSize = () => {
@@ -123,22 +112,3 @@ const Tool = ({ size, setSize, color, setColor, canvasRef }) => {
     </>
   );
 };
-const Toolbar = styled("div")({
-  display: "flex",
-  border: "2px solid steelblue",
-  backgroundColor: "steelblue",
-  padding: 18,
-  width: 800,
-  position: "relative",
-});
-const Btn = styled("div")({
-  backgroundColor: "white",
-  width: 50,
-  height: 50,
-  margin: 4.5,
-  padding: 4.5,
-  fontSize: 36,
-  display: "flex",
-  alignItems: "center",
-  justifyContent: "center",
-});
