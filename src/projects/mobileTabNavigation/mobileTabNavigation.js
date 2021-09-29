@@ -1,6 +1,6 @@
-import { styled } from "@material-ui/core";
 import React from "react";
 import { useState } from "react";
+import { Body, Phone, Img, StyledBtn, Icon } from "./styled";
 
 export default function MobileTabNavigation() {
   const [page, setPage] = useState(1);
@@ -33,9 +33,9 @@ export default function MobileTabNavigation() {
       <Phone>
         {content.map((ele, i) =>
           i === page ? (
-            <Img show={true} pic={ele.pic} position={ele.position} />
+            <Img show={1} pic={ele.pic} position={ele.position} key={i} />
           ) : (
-            <Img pic={ele.pic} />
+            <Img pic={ele.pic} key={i} />
           )
         )}
         <div
@@ -53,7 +53,8 @@ export default function MobileTabNavigation() {
               content={ele}
               setPage={setPage}
               index={i}
-              active={i === page}
+              active={+(i === page)}
+              key={i}
             />
           ))}
         </div>
@@ -63,52 +64,9 @@ export default function MobileTabNavigation() {
 }
 const Btn = ({ content, index, setPage, active }) => {
   return (
-    <StyledBtn onClick={() => setPage(index)} active={active}>
+    <StyledBtn onClick={() => setPage(index)} active={+active}>
       <Icon className={content.icon}></Icon>
       <h5 style={{ margin: "2px 0 0 0" }}>{content.title}</h5>
     </StyledBtn>
   );
 };
-const Body = styled("div")({
-  position: "relative",
-  display: "flex",
-  flexDirection: "column",
-  width: "100%",
-  fontFamily: "'Open Sans', sans-serif",
-  alignItems: "center",
-  justifyContent: "center",
-  height: "80vh",
-});
-const Phone = styled("div")({
-  position: "relative",
-  overflow: "hidden",
-  border: " 3px solid #eee",
-  borderRadius: 15,
-  height: 600,
-  width: 340,
-});
-const Img = styled("div")({
-  opacity: (props) => (props.show ? 1 : 0),
-  height: 524,
-  width: 340,
-  position: "absolute",
-  backgroundImage: (props) => `url('${props.pic}')`,
-  backgroundSize: "cover",
-  left: 0,
-  top: 0,
-  backgroundPosition: (props) => props.position,
-  transition: "opacity 0.2s ease",
-});
-const StyledBtn = styled("div")({
-  padding: 10,
-  textAlign: "center",
-  cursor: "pointer",
-  color: (props) => (props.active ? "#8e44ad" : null),
-  "&:hover": {
-    color: "#8e44ad",
-  },
-});
-const Icon = styled("i")({
-  width: 24,
-  height: 24,
-});

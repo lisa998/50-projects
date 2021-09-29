@@ -46,7 +46,7 @@ import AnimatedCountdown from "./projects/animatedCountdown/animatedCountdown";
 import ImageCarousel from "./projects/imageCarousel/imageCarousel";
 import Hoverboard from "./projects/hoverboard/hoverboard";
 import PokeDex from "./projects/pokeDex/pokeDex";
-import MobileTabNavigation from "./projects/mobileTabNavigation";
+import MobileTabNavigation from "./projects/mobileTabNavigation/mobileTabNavigation";
 import PasswordStrengthBackground from "./projects/passwordStrengthBackground";
 import BoxesBackground from "./projects/boxesBackground";
 import VerifyAccountUI from "./projects/verifyAccountUI";
