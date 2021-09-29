@@ -1,28 +1,28 @@
-import { styled } from "@material-ui/styles";
 import { useState } from "react";
+import { Body, NavBox, StyledNav, NavFont, Img, PicFont } from "./styled";
 
 export default function StickyNavbar() {
-  const [whiteStyle, setWhiteStyle] = useState(true);
+  const [white, setWhite] = useState(1);
   const changeStyle = (e) => {
     if (e.nativeEvent.target.scrollTop >= 180) {
-      setWhiteStyle(false);
+      setWhite(0);
     } else {
-      setWhiteStyle(true);
+      setWhite(1);
     }
   };
   return (
     <Body onScroll={changeStyle}>
-      <Nav whiteStyle={whiteStyle} />
+      <Nav white={white} />
       <Pic />
       <Content />
     </Body>
   );
 }
-const Nav = ({ whiteStyle }) => {
+const Nav = ({ white }) => {
   return (
-    <NavBox whiteStyle={whiteStyle}>
-      <StyledNav whiteStyle={whiteStyle}>
-        <NavFont fontSize={28} whiteStyle={whiteStyle}>
+    <NavBox white={white}>
+      <StyledNav white={white}>
+        <NavFont fontSize={28} white={white}>
           My Website
         </NavFont>
         <div style={{ display: "flex" }}>
@@ -94,70 +94,3 @@ const Content = () => {
     </div>
   );
 };
-const Body = styled("div")({
-  alignItems: "center",
-  justifyContent: "center",
-  width: "100%",
-  display: "flex",
-  flexDirection: "column",
-  position: "relative",
-  height: "90vh",
-  overflow: "auto",
-  fontFamily: "'Open Sans', sans-serif",
-});
-const NavBox = styled("div")({
-  display: "flex",
-  alignItems: "center",
-  justifyContent: "center",
-  width: "100%",
-  position: "sticky",
-  backgroundColor: (props) => (props.whiteStyle ? "#222222" : "white"),
-  top: 0,
-  zIndex: 3,
-  transition: "all 0.2s ease-in-out",
-});
-const StyledNav = styled("div")({
-  display: "flex",
-  alignItems: "center",
-  justifyContent: "space-between",
-  maxWidth: 1000,
-  width: 1000,
-  backgroundColor: (props) => (props.whiteStyle ? "#222222" : "white"),
-  color: (props) => (props.whiteStyle ? "white" : "black"),
-  transition: "all 0.2s ease-in-out",
-});
-const NavFont = styled("h3")({
-  fontSize: (props) => (props.fontSize ? props.fontSize : 20),
-  padding: (props) => (props.whiteStyle ? "35px 15px" : "20px 15px"),
-  transition: "0.2s ease-in-out",
-  cursor: "pointer",
-  "&:hover": {
-    color: "#c0392b",
-  },
-  margin: 0,
-});
-const Img = styled("div")({
-  backgroundImage:
-    "url('https://images.pexels.com/photos/450035/pexels-photo-450035.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260')",
-  width: "100%",
-  height: "80vh",
-  backgroundSize: "cover",
-  position: "relative",
-  top: 230,
-  "&::before": {
-    content: '""',
-    position: "absolute",
-    backgroundColor: "black",
-    opacity: "0.5",
-    width: "100%",
-    height: "100%",
-  },
-});
-const PicFont = styled("p")({
-  zIndex: 2,
-  color: "white",
-  position: "absolute",
-  top: (props) => props.top,
-  fontSize: (props) => props.fontSize,
-  fontWeight: (props) => props.fontWeight,
-});

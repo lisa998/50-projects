@@ -33,7 +33,7 @@ import DrawingApp from "./projects/drawingApp/drawingApp";
 import DragNDrop from "./projects/dragNDrop/dragNDrop";
 import KineticLoader from "./projects/kineticLoader/kineticLoader";
 import ContentPlaceholder from "./projects/contentPlaceholder/contentPlaceholder";
-import StickyNavbar from "./projects/stickyNavbar";
+import StickyNavbar from "./projects/stickyNavbar/stickyNavbar";
 import DoubleVerticalSlider from "./projects/doubleVerticalSlider";
 import ToastNotification from "./projects/toastNotification";
 import GithubProfiles from "./projects/githubProfiles";
