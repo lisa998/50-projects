@@ -39,7 +39,7 @@ import ToastNotification from "./projects/toastNotification/toastNotification";
 import GithubProfiles from "./projects/githubProfiles/githubProfiles";
 import DoubleClickHeart from "./projects/doubleClickHeart/doubleClickHeart";
 import AutoTextEffect from "./projects/autoTextEffect/autoTextEffect";
-import PasswordGenerator from "./projects/passwordGenerator";
+import PasswordGenerator from "./projects/passwordGenerator/passwordGenerator";
 import SwitchBtn from "./projects/Switch";
 import NoteApp from "./projects/noteApp";
 import AnimatedCountdown from "./projects/animatedCountdown";
