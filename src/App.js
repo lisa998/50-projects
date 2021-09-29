@@ -35,7 +35,7 @@ import KineticLoader from "./projects/kineticLoader/kineticLoader";
 import ContentPlaceholder from "./projects/contentPlaceholder/contentPlaceholder";
 import StickyNavbar from "./projects/stickyNavbar/stickyNavbar";
 import DoubleVerticalSlider from "./projects/doubleVerticalSlider/doubleVerticalSlider";
-import ToastNotification from "./projects/toastNotification";
+import ToastNotification from "./projects/toastNotification/toastNotification";
 import GithubProfiles from "./projects/githubProfiles";
 import DoubleClickHeart from "./projects/doubleClickHeart";
 import AutoTextEffect from "./projects/autoTextEffect";
