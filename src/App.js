@@ -38,7 +38,7 @@ import DoubleVerticalSlider from "./projects/doubleVerticalSlider/doubleVertical
 import ToastNotification from "./projects/toastNotification/toastNotification";
 import GithubProfiles from "./projects/githubProfiles/githubProfiles";
 import DoubleClickHeart from "./projects/doubleClickHeart/doubleClickHeart";
-import AutoTextEffect from "./projects/autoTextEffect";
+import AutoTextEffect from "./projects/autoTextEffect/autoTextEffect";
 import PasswordGenerator from "./projects/passwordGenerator";
 import SwitchBtn from "./projects/Switch";
 import NoteApp from "./projects/noteApp";
