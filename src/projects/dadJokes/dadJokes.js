@@ -15,7 +15,11 @@ export default function DadJokes() {
     setJoke(joke.data.joke);
   };
   useEffect(() => {
-    getJoke();
+    let isMount = true;
+    if (isMount) {
+      getJoke();
+    }
+    return () => (isMount = false);
   }, []);
 
   return (

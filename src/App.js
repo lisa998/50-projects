@@ -32,7 +32,7 @@ import ButtonRippleEffect from "./projects/buttonRippleEffect/buttonRippleEffect
 import DrawingApp from "./projects/drawingApp/drawingApp";
 import DragNDrop from "./projects/dragNDrop/dragNDrop";
 import KineticLoader from "./projects/kineticLoader/kineticLoader";
-import ContentPlaceholder from "./projects/contentPlaceholder";
+import ContentPlaceholder from "./projects/contentPlaceholder/contentPlaceholder";
 import StickyNavbar from "./projects/stickyNavbar";
 import DoubleVerticalSlider from "./projects/doubleVerticalSlider";
 import ToastNotification from "./projects/toastNotification";
