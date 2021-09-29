@@ -1,6 +1,7 @@
-import { styled } from "@material-ui/core";
 import React, { useEffect } from "react";
 import { useState } from "react";
+import { Body, StyledNote, Tool, Icon, AddBtn } from "./styled";
+
 export default function NoteApp() {
   const [notes, setNote] = useState([
     { id: 0, content: "" },
@@ -15,7 +16,6 @@ export default function NoteApp() {
   };
   useEffect(() => {
     let localnote = JSON.parse(localStorage.getItem("notes"));
-    console.log(localnote);
     if (localnote) {
       setNote(localnote);
     }
@@ -25,8 +25,8 @@ export default function NoteApp() {
   }, [notes]);
   return (
     <Body>
-      {notes.map((ele) => (
-        <Note note={ele} notes={notes} setNote={setNote} />
+      {notes.map((ele, i) => (
+        <Note note={ele} notes={notes} setNote={setNote} key={i} />
       ))}
       <AddBtn onClick={handleAdd}>
         <i className="fas fa-plus" style={{ marginRight: 10 }}></i>
@@ -85,42 +85,3 @@ const Note = ({ note, notes, setNote }) => {
     </StyledNote>
   );
 };
-
-const Body = styled("div")({
-  position: "relative",
-  display: "flex",
-  width: "100%",
-  height: "85vh",
-  fontFamily: "'Poppins', sans-serif",
-  backgroundColor: "#7bdaf3",
-  flexWrap: "wrap",
-  overflowY: "scroll",
-  minWidth: 1050,
-});
-const StyledNote = styled("div")({
-  width: 400,
-  height: 400,
-  boxShadow: "0 0 10px 4px rgb(0 0 0 / 10%)",
-  backgroundColor: "white",
-  margin: 20,
-});
-const Tool = styled("div")({
-  display: "flex",
-  justifyContent: "flex-end",
-  alignItems: "center",
-});
-const Icon = styled("div")({
-  cursor: "pointer",
-  color: "white",
-  padding: 10,
-  fontSize: 20,
-});
-const AddBtn = styled("div")({
-  backgroundColor: "#9ec862",
-  color: "white",
-  padding: "0.5rem 1rem",
-  borderRadius: 5,
-  position: "absolute",
-  top: 10,
-  right: 10,
-});

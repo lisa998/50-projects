@@ -1,12 +1,12 @@
-import { styled } from "@material-ui/core";
 import React from "react";
 import { useState } from "react";
+import { Body, Container, Oval, Circle } from "./styled";
 
 export default function SwitchBtn() {
   const [choices, setChoices] = useState([
-    { title: "Good", active: false },
-    { title: "Cheap", active: false },
-    { title: "Fast", active: false },
+    { title: "Good", active: 0 },
+    { title: "Cheap", active: 0 },
+    { title: "Fast", active: 0 },
   ]);
 
   return (
@@ -34,9 +34,9 @@ const CheckBox = ({ choice, setChoices, choices }) => {
       target === choices[2].title
     ) {
       setChoices([
-        { title: "Good", active: true },
-        { title: "Cheap", active: false },
-        { title: "Fast", active: true },
+        { title: "Good", active: 1 },
+        { title: "Cheap", active: 0 },
+        { title: "Fast", active: 1 },
       ]);
     } else if (
       choices[0].active &&
@@ -45,9 +45,9 @@ const CheckBox = ({ choice, setChoices, choices }) => {
       target === choices[1].title
     ) {
       setChoices([
-        { title: "Good", active: false },
-        { title: "Cheap", active: true },
-        { title: "Fast", active: true },
+        { title: "Good", active: 0 },
+        { title: "Cheap", active: 1 },
+        { title: "Fast", active: 1 },
       ]);
     } else if (
       choices[1].active &&
@@ -56,9 +56,9 @@ const CheckBox = ({ choice, setChoices, choices }) => {
       target === choices[0].title
     ) {
       setChoices([
-        { title: "Good", active: true },
-        { title: "Cheap", active: true },
-        { title: "Fast", active: false },
+        { title: "Good", active: 1 },
+        { title: "Cheap", active: 1 },
+        { title: "Fast", active: 0 },
       ]);
     } else {
       setChoices(
@@ -66,7 +66,7 @@ const CheckBox = ({ choice, setChoices, choices }) => {
           if (ele.title === target) {
             if (ele.title !== target) {
             }
-            return { ...ele, active: !ele.active };
+            return { ...ele, active: +!ele.active };
           } else {
             return ele;
           }
@@ -94,43 +94,3 @@ const CheckBox = ({ choice, setChoices, choices }) => {
     </Container>
   );
 };
-
-const Body = styled("div")({
-  position: "relative",
-  display: "flex",
-  flexDirection: "column",
-  justifyContent: "center",
-  alignItems: "center",
-  width: "100%",
-  height: "70vh",
-  fontFamily: "monospace",
-});
-
-const Container = styled("div")({
-  display: "flex",
-  padding: 10,
-  width: 200,
-  alignItems: "center",
-  justifyContent: "flex-start",
-});
-const Oval = styled("div")({
-  width: 80,
-  height: 40,
-  borderRadius: 40,
-  display: "flex",
-  alignItems: "center",
-  padding: 4,
-  backgroundColor: (props) => (props.active ? "#8e44ad" : "#D0D0D0"),
-  marginRight: 10,
-  cursor: "pointer",
-  position: "relative",
-});
-const Circle = styled("div")({
-  width: 34,
-  height: 34,
-  backgroundColor: "#fff",
-  borderRadius: "50%",
-  position: "relative",
-  transform: (props) => (props.active ? " translateX(113%)" : null),
-  transition: "0.3s ease-in",
-});
