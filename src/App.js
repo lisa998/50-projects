@@ -30,7 +30,7 @@ import BackgroundSlider from "./projects/backgroundSlider/backgroundSlider";
 import ThemeClock from "./projects/themeClock/themeClock";
 import ButtonRippleEffect from "./projects/buttonRippleEffect/buttonRippleEffect";
 import DrawingApp from "./projects/drawingApp";
-import DragNDrop from "./projects/dragNDrop";
+import DragNDrop from "./projects/dragNDrop/dragNDrop";
 import KineticLoader from "./projects/kineticLoader";
 import ContentPlaceholder from "./projects/contentPlaceholder";
 import StickyNavbar from "./projects/stickyNavbar";

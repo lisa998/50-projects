@@ -1,35 +1,12 @@
-import { styled } from "@material-ui/styles";
 import { useState } from "react";
 import { DndProvider } from "react-dnd";
 import { HTML5Backend } from "react-dnd-html5-backend";
 import { useDrop, useDrag } from "react-dnd";
+import { Body, StyledContainer, Pic } from "./styled";
 
 const ItemTypes = {
   PIC: "pic",
 };
-const Body = styled("div")({
-  height: "80vh",
-  display: "flex",
-  alignItems: "center",
-  justifyContent: "center",
-  width: "100%",
-  backgroundColor: "rgb(63 81 181 / 20%)",
-});
-const StyledContainer = styled("div")({
-  width: 150,
-  height: 150,
-  margin: 10,
-  border: "3px solid black",
-  position: "relative",
-});
-
-const Pic = styled("div")({
-  backgroundImage: "url('https://source.unsplash.com/random/150x150')",
-  height: 144,
-  width: 144,
-  cursor: "pointer",
-  position: "relative",
-});
 
 const hoverStyle = {
   backgroundColor: "#333",
