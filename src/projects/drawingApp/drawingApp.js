@@ -5,7 +5,6 @@ export default function DrawingApp() {
   const [size, setSize] = useState(10);
   const [color, setColor] = useState("black");
   const canvasRef = useRef(undefined);
-  console.log("render");
   let ctx,
     x,
     y,
@@ -33,7 +32,6 @@ export default function DrawingApp() {
   };
   const drawCircle = (x, y) => {
     ctx = canvasRef.current.getContext("2d");
-    console.log(x, y);
     ctx.beginPath();
     ctx.arc(x, y, size, 0, Math.PI * 2);
     ctx.fillStyle = color;

@@ -25,6 +25,7 @@ export default function DragNDrop() {
             setIsEmpty={setIsEmpty}
             index={i}
             isEmpty={isEmpty}
+            key={i}
           />
         ))}
       </DndProvider>
