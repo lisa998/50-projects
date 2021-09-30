@@ -50,7 +50,7 @@ import MobileTabNavigation from "./projects/mobileTabNavigation/mobileTabNavigat
 import PasswordStrengthBackground from "./projects/passwordStrengthBackground/passwordStrengthBackground";
 import BoxesBackground from "./projects/boxesBackground/boxesBackground";
 import VerifyAccountUI from "./projects/verifyAccountUI/verifyAccountUI";
-import LiveUserFilter from "./projects/liveUserFilter";
+import LiveUserFilter from "./projects/liveUserFilter/liveUserFilter";
 import FeedbackUiDesign from "./projects/feedbackUiDesign";
 import CustomRangeSlider from "./projects/customRangeSlider";
 import NexflixMobileNav from "./projects/nexflixMobileNav";

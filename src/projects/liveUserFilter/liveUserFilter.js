@@ -1,7 +1,7 @@
-import { styled } from "@material-ui/core";
 import React, { useEffect } from "react";
 import { useState } from "react";
 import axios from "axios";
+import { Body, Div, Users, StyledUser, SearchDiv, Input } from "./styled";
 
 export default function LiveUserFilter() {
   const [users, setUsers] = useState([]);
@@ -75,7 +75,7 @@ const Search = ({ value, setValue }) => {
 const User = ({ user }) => {
   const { hide, img, name, location } = user;
   return (
-    <StyledUser hide={hide}>
+    <StyledUser hide={+hide}>
       <img
         src={img}
         alt=""
@@ -88,50 +88,3 @@ const User = ({ user }) => {
     </StyledUser>
   );
 };
-const Body = styled("div")({
-  position: "relative",
-  display: "flex",
-  flexDirection: "column",
-  width: "100%",
-  fontFamily: "'Roboto', sans-serif",
-  alignItems: "center",
-  justifyContent: "center",
-  height: "80vh",
-});
-
-const Div = styled("div")({
-  width: 300,
-  boxShadow: "3px 3px 10px rgb(0 0 0 / 20%)",
-  borderRadius: 5,
-  overflow: "hidden",
-});
-const Users = styled("div")({
-  width: "100%",
-  height: 400,
-  overflowY: "scroll",
-});
-const StyledUser = styled("div")({
-  width: "100%",
-  height: 105,
-  padding: 20,
-  display: (props) => (props.hide ? "none" : "flex"),
-  borderBottom: "1px solid #eee",
-});
-const SearchDiv = styled("div")({
-  width: "100%",
-  backgroundColor: "#3e57db",
-  color: "white",
-  padding: "30px 20px",
-});
-const Input = styled("input")({
-  backgroundColor: "rgba(0, 0, 0, 0.3)",
-  border: 0,
-  borderRadius: 50,
-  color: "#fff",
-  fontSize: 14,
-  padding: "10px 15px",
-  width: "100%",
-  "&:focus-visible": {
-    outline: "none",
-  },
-});
