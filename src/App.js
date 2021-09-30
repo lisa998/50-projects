@@ -48,7 +48,7 @@ import Hoverboard from "./projects/hoverboard/hoverboard";
 import PokeDex from "./projects/pokeDex/pokeDex";
 import MobileTabNavigation from "./projects/mobileTabNavigation/mobileTabNavigation";
 import PasswordStrengthBackground from "./projects/passwordStrengthBackground/passwordStrengthBackground";
-import BoxesBackground from "./projects/boxesBackground";
+import BoxesBackground from "./projects/boxesBackground/boxesBackground";
 import VerifyAccountUI from "./projects/verifyAccountUI";
 import LiveUserFilter from "./projects/liveUserFilter";
 import FeedbackUiDesign from "./projects/feedbackUiDesign";

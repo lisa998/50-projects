@@ -1,36 +1,6 @@
 import { styled } from "@material-ui/core";
-import React from "react";
-import { useState } from "react";
 
-export default function BoxesBackground() {
-  const [big, setBig] = useState(false);
-  const [click, setClick] = useState(false);
-  const boxArr = [];
-  for (let i = 0; i < 720; i += 180) {
-    for (let j = 0; j < 480; j += 120) {
-      boxArr.push(`-${i}px -${j}px`);
-    }
-  }
-  return (
-    <Body>
-      <Btn
-        onClick={() => setBig(!big)}
-        onMouseDown={() => setClick(true)}
-        onMouseUp={() => setClick(false)}
-        click={click}
-      >
-        Magic
-      </Btn>
-      <BoxesContainer big={big}>
-        {boxArr.map((ele) => (
-          <Box position={ele} big={big} />
-        ))}
-      </BoxesContainer>
-    </Body>
-  );
-}
-
-const Body = styled("div")({
+export const Body = styled("div")({
   position: "relative",
   display: "flex",
   flexDirection: "column",
@@ -41,7 +11,7 @@ const Body = styled("div")({
   height: "80vh",
   top: 30,
 });
-const Btn = styled("div")({
+export const Btn = styled("div")({
   padding: 15,
   borderRadius: 3,
   boxShadow: (props) =>
@@ -55,7 +25,7 @@ const Btn = styled("div")({
   top: (props) => (props.click ? -30 : -35),
   cursor: "pointer",
 });
-const BoxesContainer = styled("div")({
+export const BoxesContainer = styled("div")({
   width: (props) => (props.big ? 835 : 720),
   height: (props) => (props.big ? 565 : 480),
   display: "flex",
@@ -64,7 +34,7 @@ const BoxesContainer = styled("div")({
   justifyContent: "space-between",
   alignContent: "space-around",
 });
-const Box = styled("div")({
+export const Box = styled("div")({
   backgroundImage:
     "url('https://cdn.pixabay.com/photo/2015/02/25/17/56/cat-649164_960_720.jpg')",
   width: 180,
