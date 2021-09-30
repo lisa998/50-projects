@@ -1,24 +1,6 @@
 import { styled } from "@material-ui/core";
-import React from "react";
-import { useState } from "react";
 
-export default function CustomRangeSlider() {
-  const [value, setValue] = useState(50);
-  return (
-    <Body>
-      <h1 style={{ color: "purple" }}>Custom Range Slider</h1>
-      <Input
-        type="range"
-        min="0"
-        max="100"
-        step="1"
-        value={value}
-        onChange={(e) => setValue(e.target.value)}
-      />
-    </Body>
-  );
-}
-const Body = styled("div")({
+export const Body = styled("div")({
   position: "relative",
   display: "flex",
   flexDirection: "column",
@@ -29,7 +11,7 @@ const Body = styled("div")({
   justifyContent: "space-evenly",
 });
 
-const Input = styled("input")({
+export const Input = styled("input")({
   width: 300,
   "-webkit-appearance": "none",
   background: "transparent",
