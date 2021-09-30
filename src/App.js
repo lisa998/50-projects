@@ -56,7 +56,7 @@ import CustomRangeSlider from "./projects/customRangeSlider/customRangeSlider";
 import NexflixMobileNav from "./projects/nexflixMobileNav/nexflixMobileNav";
 import QuizApp from "./projects/quizApp/quizApp";
 import TestimonialBoxSwitcher from "./projects/testimonialBoxSwitcher/testimonialBoxSwitcher";
-import RandomImageFeed from "./projects/randomImageFeed";
+import RandomImageFeed from "./projects/randomImageFeed/randomImageFeed";
 import Todos from "./projects/todos";
 import CatchGame from "./projects/catchGame";
 
