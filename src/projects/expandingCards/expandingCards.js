@@ -15,7 +15,7 @@ const Panels = ({ info, select, index, setSelect }) => {
     </Panel>
   );
 };
-export default function ExpendingCard() {
+export default function ExpandingCards() {
   const info = [
     { pic: "photo-1558979158-65a1eaa08691", title: "Explore The World" },
     { pic: "photo-1572276596237-5db2c3e16c5d", title: "Wild Forest" },
