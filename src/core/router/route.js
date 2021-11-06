@@ -1,7 +1,7 @@
 import { lazy } from "react";
 import { projectName } from "./projectName";
 
-const handleName = (path) => {
+export const handleName = (path) => {
   let str = "";
   path
     .split("-")
@@ -22,7 +22,7 @@ export const routes = [
     name: "Home",
     path: "/",
     exact: true,
-    component: "",
+    component: lazy(() => import(`../../projects/home/home`)),
   },
   ...projectName.map((ele) => {
     return {
