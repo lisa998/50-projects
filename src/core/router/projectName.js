@@ -39,7 +39,7 @@ export const projectName = [
   "mobile-tab-navigation",
   "password-strength-background",
   "boxes-background",
-  "verify-account-ui",
+  "verify-account",
   "live-user-filter",
   "feedback-ui-design",
   "custom-range-slider",

@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 import { useState } from "react";
 import { Body, Div, TextDiv, Input } from "./styled";
 
-export default function VerifyAccountUi() {
+export default function VerifyAccount() {
   const [value, setValue] = useState(
     new Array(6).fill({ data: "", active: false })
   );
