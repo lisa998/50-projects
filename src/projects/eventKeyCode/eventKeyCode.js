@@ -22,12 +22,11 @@ export default function EventKeyCode() {
 
 const Boxs = ({ info }) => {
   const tag = ["event.key", "event.keyCode", "event.code"];
-  console.log(info);
   return (
     <StyledBoxs>
       {info.map((k, i) => {
         return (
-          <BoxDiv>
+          <BoxDiv key={k}>
             <div style={{ width: "auto", margin: "auto" }}>{tag[i]}</div>
             <Box>{k}</Box>
           </BoxDiv>

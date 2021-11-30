@@ -22,8 +22,10 @@ export default function ToastNotification() {
         Show Notification
       </Box>
       <MessageContainer>
-        {toast.map((ele) => (
-          <Box color={ele.color}>{ele.content}</Box>
+        {toast.map((ele, i) => (
+          <Box color={ele.color} key={i}>
+            {ele.content}
+          </Box>
         ))}
       </MessageContainer>
     </Body>

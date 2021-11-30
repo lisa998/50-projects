@@ -39,7 +39,11 @@ export default function RandomChoicePicker() {
       ></Textarea>
       <Options>
         {option.map((op, i) =>
-          op ? <Option active={random === i}>{op}</Option> : null
+          op ? (
+            <Option active={+(random === i)} key={i}>
+              {op}
+            </Option>
+          ) : null
         )}
       </Options>
     </Body>

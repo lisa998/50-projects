@@ -8,15 +8,18 @@ export default function FeedbackUiDesign() {
   const choices = [
     {
       title: "Unhappy",
-      img: "https://image.flaticon.com/icons/svg/187/187150.svg",
+      img: "fas fa-frown",
+      color: "red",
     },
     {
       title: "Neutral",
-      img: "https://image.flaticon.com/icons/svg/187/187136.svg",
+      img: "fas fa-meh-blank",
+      color: "orange",
     },
     {
       title: "Satisfied",
-      img: "https://image.flaticon.com/icons/svg/187/187133.svg",
+      img: "fas fa-grin",
+      color: "green",
     },
   ];
 
@@ -59,7 +62,15 @@ const Form = ({ choices, select, setSelect, setSubmit }) => {
               onClick={() => setSelect(i)}
               key={i}
             >
-              <img src={ele.img} alt="" style={{ width: 40, heigth: 40 }} />
+              <i
+                className={ele.img}
+                style={{
+                  width: 40,
+                  heigth: 40,
+                  fontSize: 40,
+                  color: ele.color,
+                }}
+              ></i>
               <p>{ele.title}</p>
             </Choice>
           );

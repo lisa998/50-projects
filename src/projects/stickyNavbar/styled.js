@@ -3,7 +3,7 @@ import { styled } from "@material-ui/styles";
 export const Body = styled("div")({
   alignItems: "center",
   justifyContent: "center",
-  width: "100%",
+  width: "85vw",
   display: "flex",
   flexDirection: "column",
   position: "relative",
@@ -63,6 +63,7 @@ export const PicFont = styled("p")({
   zIndex: 2,
   color: "white",
   position: "absolute",
+  padding: 30,
   top: (props) => props.top,
   fontSize: (props) => props.fontSize,
   fontWeight: (props) => props.fontWeight,
